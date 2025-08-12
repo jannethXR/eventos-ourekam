@@ -338,3 +338,35 @@ input:focus, select:focus, textarea:focus {
 @media (max-width: 480px) {
   .btn { width: 100%; max-width: 420px; }
 }
+
+.about-guide {
+  background: linear-gradient(135deg, rgba(241, 91, 181, 0.08), rgba(0, 187, 249, 0.08));
+  padding: 56px 0;
+}
+
+.about-grid {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.about-text {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+}
+
+.about-guide .section-title {
+  color: var(--text-dark); /* azul oscuro */
+  font-size: clamp(1.4rem, 1.2vw + 1rem, 2rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: #374151;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
