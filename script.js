@@ -133,3 +133,74 @@ form.addEventListener('submit', function(e) {
     errorMessage.classList.remove('hidden');
   });
 });
+
+// Testimonials Carousel
+function initTestimonialsCarousel() {
+  const carousel = document.getElementById('carousel-testimonials');
+  if (!carousel) return;
+
+  const slides = carousel.querySelectorAll('.carousel-testimonials');
+  if (!slides.length) return;
+
+  let currentSlide = 0;
+  const slideCount = slides.length;
+  
+  // Set initial styles for the container
+  carousel.style.position = 'relative';
+  carousel.style.height = `${slides[0].offsetHeight}px`;
+  
+  // Set up initial slide positions
+  slides.forEach((slide, index) => {
+    slide.style.position = 'absolute';
+    slide.style.top = '0';
+    slide.style.left = '0';
+    slide.style.width = '100%';
+    slide.style.opacity = index === 0 ? '1' : '0';
+    slide.style.transform = index === 0 ? 'translateX(0)' : 'translateX(100%)';
+    slide.style.transition = 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out';
+  });
+
+  function showSlide(index) {
+    // Hide current slide
+    slides[currentSlide].style.opacity = '0';
+    slides[currentSlide].style.transform = 'translateX(-100%)';
+    
+    // Show new slide
+    slides[index].style.opacity = '1';
+    slides[index].style.transform = 'translateX(0)';
+    
+    // Reset other slides
+    slides.forEach((slide, i) => {
+      if (i !== currentSlide && i !== index) {
+        slide.style.opacity = '0';
+        slide.style.transform = 'translateX(100%)';
+      }
+    });
+    
+    currentSlide = index;
+  }
+
+  let intervalId = setInterval(() => {
+    const nextSlide = (currentSlide + 1) % slideCount;
+    showSlide(nextSlide);
+  }, 10000);
+
+  // Clean up on page change/unmount
+  return () => clearInterval(intervalId);
+}
+
+// Initialize carousels when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  initTestimonialsCarousel();
+  
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    const carousel = document.getElementById('carousel-testimonials');
+    if (carousel) {
+      const firstSlide = carousel.querySelector('.carousel-testimonials');
+      if (firstSlide) {
+        carousel.style.height = `${firstSlide.offsetHeight}px`;
+      }
+    }
+  });
+});

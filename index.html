@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>La Inteligencia del Estrés | Ourekam</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <meta name="description" content="Taller - Formación Exclusivo: La inteligencia del estrés. Un viaje neurocientífico para liberar tu potencial y mejorar tu bienestar." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Inteligencia del Estrés | Ourekam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <meta name="description" content="Taller - Formación Exclusivo: La inteligencia del estrés. Un viaje neurocientífico para liberar tu potencial y mejorar tu bienestar." />
 </head>
+
 <body class="font-['Nunito_Sans'] text-gray-800 bg-gray-50 leading-relaxed">
-  <!-- Navbar -->
+   
+        <!-- Navbar -->
   <nav id="navbar" 
        x-data="{ 
          lastScroll: 0,
@@ -40,7 +42,7 @@
          'shadow-lg': !atTop
        }"
        class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out bg-sky-100">
-    <div class="max-w-screen-lg mx-auto px-12">
+    <div class="max-w-screen-xl mx-auto px-12">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <a href="https://ourekam.com" target="_blank" class="flex items-center">
@@ -99,55 +101,61 @@
       </div>
     </div>
   </nav>
-
-  <!-- HERO -->
-  <header class="hero relative min-h-[88vh] grid place-items-center text-white mt-20">
-    <div class="container max-w-[900px] text-center mx-auto px-6">
-      <p class="tracking-wider uppercase font-bold text-md text-[#f15bb5] mb-3">
-        Taller - Formación Exclusivo
-      </p>
-      <h1 class="font-extrabold text-4xl leading-tight mb-3">
-        ¿Eres un profesional con alta responsabilidad, expuesto a altos niveles de estrés?
-      </h1>
-      <h2 class="font-semibold text-amber-200 text-xl">Reduce la depresión y la ansiedad sin dejar que el burnout destruya tu vida y tu carrera profesional
-        gracias a neuroentrenamientos de la corteza prefrontal y protocolos de neuroplasticidad
-      </h2>
-
-      <p class="text-gray-100 my-2 text-lg">
-        No dejes que el estrés controle tu vida profesional
-      </p>
-
-      <ul class="flex gap-3 justify-center flex-wrap my-4">
-        <li class="bg-white/10 text-white border border-white/20 px-3 py-2 rounded-full text-sm backdrop-blur-sm">
-          Evento privado
-        </li>
-        <li class="bg-white/10 text-white border border-white/20 px-3 py-2 rounded-full text-sm backdrop-blur-sm">
-          100% gratuito
-        </li>
-        <li class="bg-white/10 text-white border border-white/20 px-3 py-2 rounded-full text-sm backdrop-blur-sm">
-          En línea
-        </li>
-      </ul>
-
-      <p class="my-4 text-gray-200">
-        Con la intervención de la Ingeniera <strong class="text-amber-200">Janneth Rodríguez</strong>, fundadora de Ourekam, coach ágil y en Neurociencia Cognitiva y Comportamental.
-      </p>
-
-      <p class="mt-4 mb-8 text-gray-200">
-        <strong>23 y 24 de agosto</strong> · 19:00 (hora Francia)
-      </p>
-
-      <a href="#registro" class="bg-sky-500 hover:bg-sky-700 mt-6 px-8 py-4 rounded-full font-bold text-white transition-all duration-150">
-        ¡Reservar mi acceso ahora!
-      </a>
+    <!-- Hero Section -->
+  <section>
+    <div class="relative bg-gradient-to-br from-sky-50 to-white overflow-hidden">
+        <div class="container max-w-screen-xl mx-auto pt-24 pb-10">
+            <div class="flex flex-col mx-4 px-4 md:px-6">
+            <h1 class="text-2xl text-pink-500 md:text-3xl font-bold mb-2">Workshop Exclusivo</h1>
+                <h2 class="text-2xl md:text-3xl font-bold text-left text-[#2f327d]">
+                    ¿Eres un profesional con alta responsabilidad, expuesto a altos niveles de estrés?
+                </h2>
+            </div>
+            <div class="flex flex-col mx-4 md:flex-row items-center">
+                <div class="w-full md:w-1/2 px-4 md:px-6 py-4 md:py-4">
+                    
+                    <h2 class="text-xl md:text-2xl font-bold text-left text-[#a08c4a]-d1 mb-4">
+                        Reduce el estrés, la depresión y la ansiedad sin dejar que el burnout destruya tu vida y tu
+                        carrera profesional,
+                        <span class="text-[#a08c4a]">gracias a neuroentrenamientos de la corteza prefrontal y protocolos de neuroplasticidad
+                        </span>
+                    </h2>
+                    <p class="text-gray-700 mb-3">
+                        Únete a nuestro workshop exclusivo y 100% GRATIS con Janneth Rodríguez y descubre un método
+                        innovador basado en neurociencias para reducir hasta un 80% el estrés, la depresión y la
+                        ansiedad, mientras incrementas tu resiliencia para enfrentar la presión laboral de entornos
+                        altamente estresantes.
+                    </p>
+                    <p class="text-gray-700">
+                        <strong>
+                            Cupos limitados para este evento privado, 100% gratuito y
+                            accesible en línea. • 23 y 24 de agosto a las 7pm (hora Francia)
+                        </strong>
+                    </p>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="#registro" class="bg-sky-500 hover:bg-sky-700 mt-6 px-4 py-3 rounded-lg font-bold text-white transition-all duration-150">
+                            ¡Reservar mi acceso ahora!
+                        </a>
+                    </div>
+                </div>
+                <div class="block w-full md:w-1/2">
+                    <div class="aspect-video rounded-lg overflow-hidden relative">
+                        <div class="relative w-full h-0 pb-[56.25%]"><img
+                                alt="IC Ourekam" data-nuxt-img=""
+                                class="absolute top-0 left-0 w-full h-full object-cover"
+                                src="/public/mujer-estres.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
-
+</section>
   <!-- COUNTDOWN -->
-  <section class="bg-white py-14 md:py-16">
+  <section class="bg-white py-6 md:py-8">
     <div class="container max-w-[1120px] mx-auto px-6">
       <h2 class="text-center text-[#2f327d] font-bold text-[clamp(1.4rem,1.2vw+1rem,2rem)] mb-4">
-        El Taller - Formación en vivo comienza en:
+        El Workshop en vivo comienza en:
       </h2>
 
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 mx-auto mb-2 md:max-w-[600px] max-w-none">
@@ -170,106 +178,352 @@
       </div>
     </div>
   </section>
-
-  <!-- DOS DÍAS PARA... -->
-  <section class="relative py-14 bg-gradient-to-br from-pink-100/50 to-blue-100/50">
-    <div class="container max-w-[1120px] mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-[1.1fr,1fr] gap-8 items-start">
-        <div class="space-y-4">
-          <h3 class="text-[#2f327d] font-extrabold text-[clamp(1.2rem,1vw+1rem,1.6rem)]">
-            Dos días para: ¡Desbloquear tu potencial, mejorar tu bienestar!
-          </h3>
-          <p class="text-gray-700">
-            Una visión diferente del estrés: un método innovador basado en los descubrimientos más recientes de la neurociencia para desarrollar nuestro potencial y mejorar nuestro bienestar.
-          </p>
-          <p class="text-gray-700">
-            Este Taller - Formación exclusivo te ofrece una oportunidad única para explorar la inteligencia del estrés y descubrir cómo puede ayudarte a liberar tu verdadero potencial y mejorar tu calidad de vida.
-          </p>
-          <a href="#registro" class="btn btn--outline">
-            Quiero reservar mi cupo gratis
-          </a>
+  
+        <div class="container max-w-screen-lg mx-auto py-12 px-4">
+            <div
+                class="divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 dark:bg-gray-900 bg-white shadow-xl rounded-xl overflow-hidden">
+               
+                <div class="px-4 py-5 sm:p-6">
+                    <div class="p-6 md:p-8">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#2f327d] mb-2">
+                          <span class="mb-2 text-pink-500">
+                                Dos días para:
+                            </span><br>
+                            ¡Descubrir cómo reducir el estrés, la depresión y la ansiedad e incrementar tu resiliencia
+                            para afrontar la presión laboral!
+                            
+                        </h2>
+                        <h2 class="text-[#a08c4a] font-semibold text-xl md:text-2xl mb-4">
+                            El estrés laboral extremo puede reducir tu rendimiento, afectar tu salud mental y
+                            física, y poner en riesgo tus relaciones y tu futuro profesional.
+                        </h2>
+                        <div class="space-y-4 text-gray-700">
+                            <p>
+                                Este Workshop exclusivo te ofrece una oportunidad única para descubrir cómo los últimos
+                                descubrimientos de las neurociencias aplicadas pueden ayudarte a mejorar tu bienestar y
+                                tu proyección profesional.
+                            </p>
+                            <div class="bg-sky-50 p-4 rounded-lg border-l-4 border-azulok mt-6">
+                                <h3 class="font-semibold text-lg mb-2 text-[#2f327d] flex items-center"><span
+                                        class="iconify i-hugeicons:brain-02 mr-2 text-azulok" aria-hidden="true"
+                                        ></span> Los beneficios que obtendrás :</h3>
+                                <ul class="list-none space-y-3"><!--[-->
+                                    <li class="flex items-start"><span
+                                            class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                            aria-hidden="true" ></span><span>
+                                            Descubrir cómo reducir el estrés y síntomas de depresión y ansiedad en un
+                                            80% en menos de 90 días.
+                                        </span></li>
+                                    <li class="flex items-start"><span
+                                            class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                            aria-hidden="true" ></span><span>
+                                            Incrementar tu resiliencia para manejar mejor el estrés y la presión laboral
+                                            diaria.
+                                        </span>
+                                    </li>
+                                    <li class="flex items-start"><span
+                                            class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                            aria-hidden="true" ></span><span>
+                                            Recuperar claridad mental y mejorar la inteligencia adaptativa para que tu
+                                            carrera no se detenga.
+                                        </span></li>
+                                    <li class="flex items-start"><span
+                                            class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                            aria-hidden="true" ></span><span>
+                                            Disfrutar de acceso exclusivo a herramientas de neuroentrenamiento de la
+                                            corteza prefrontal y protocolos de neuroplasticidad.
+                                        </span></li>
+                                </ul>
+                            </div>
+                            <div class="flex justify-center md:justify-start">
+                        <a href="#registro" class="bg-sky-500 hover:bg-sky-700 mt-6 px-4 py-3 rounded-lg font-bold text-white transition-all duration-150">
+                            ¡Reservar mi acceso ahora!
+                        </a>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-4xl mb-4">🧠</div>
-            <h4 class="text-xl font-semibold mb-2">Neurociencia clara</h4>
-            <p class="text-gray-700">
-              Descubre cómo explican las neurociencias el funcionamiento del estrés.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-4xl mb-4">⚡</div>
-            <h4 class="text-xl font-semibold mb-2">Transformación práctica</h4>
-            <p class="text-gray-700">
-              Convierte el estrés en una palanca para liberar tu potencial.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-4xl mb-4">🌿</div>
-            <h4 class="text-xl font-semibold mb-2">Bienestar real</h4>
-            <p class="text-gray-700">
-              Herramientas simples para sentirte más serena/o y enfocada/o.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="text-4xl mb-4">🎯</div>
-            <h4 class="text-xl font-semibold mb-2">Resultados sostenibles</h4>
-            <p class="text-gray-700">
-              Integra hábitos que impacten tu día a día with claridad y foco.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT GUIDE -->
-  <section class="about-guide py-14">
-    <h2 class="text-center text-[#2f327d] font-bold text-3xl mb-4">
-      ¿Quién te acompañará en este viaje?
-    </h2>
-    <h2 class="text-center text-pink-500 font-semibold text-[clamp(1.1rem,1vw+0.6rem,1.4rem)] opacity-85 mb-8">
-      Conoce a Janneth Rodríguez
-    </h2>
     
-    <div class="container max-w-[1120px] mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-[1fr,2fr] gap-12">
-        <div class="max-w-[320px] lg:max-w-none mx-auto">
-          <div class="relative w-full aspect-square rounded-full overflow-hidden bg-white border-4 border-white shadow-lg">
-            <img src="/public/janneth-coach.jpg" alt="Janneth Rodríguez" class="w-full h-full object-cover">
-          </div>
+        <div class="container max-w-screen-lg mx-auto py-12 px-4">
+            <div
+                class="divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 dark:bg-gray-900 bg-white shadow-xl rounded-xl overflow-hidden">
+                <!---->
+                <div class="px-4 py-5 sm:p-6"><!--[-->
+                    <div class="p-6 md:p-8">
+                        <h1 class="text-2xl md:text-3xl font-bold text-[#2f327d] mb-6"><span class="text-[#2f327d]">
+                                Lo que evitas al actuar ahora:
+                            </span></h1>
+                        <div class="space-y-4 text-gray-700">
+                            <div>
+                                <h2 class="font-bold">
+                                    Pérdida de ingresos y oportunidades de crecimiento profesional
+                                </h2>
+                                <p>
+                                    El estrés laboral extremo puede reducir tu rendimiento hasta un 30%, lo que implica
+                                    pérdidas anuales en bonos, ascensos o renovaciones contractuales.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="font-bold">
+                                    Riesgo de baja laboral prolongada
+                                </h2>
+                                <p>
+                                    Hasta 6 meses de incapacidad por ansiedad o depresión severa, con impacto
+                                    considerable en tu carrera y reputación.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="font-bold">
+                                    Deterioro acelerado de la salud física y mental
+                                </h2>
+                                <p>
+                                    Mayor riesgo de enfermedades cardiovasculares y deterioro cognitivo por estrés
+                                    crónico.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="font-bold">
+                                    Conflictos y rupturas personales
+                                </h2>
+                                <p>
+                                    Reducción del tiempo de calidad con pareja e hijos, aumentando la probabilidad de
+                                    conflictos o separaciones.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="font-bold">
+                                    Pérdida de estatus e influencia laboral
+                                </h2>
+                                <p>
+                                    Menor visibilidad e impacto en decisiones clave, pasando de ser un referente a ser
+                                    considerado reemplazable.
+                                </p>
+                            </div>
+                            <div class="flex justify-center md:justify-start">
+                                <a href="#registro" class="bg-sky-500 hover:bg-sky-700 mt-6 px-4 py-3 rounded-lg font-bold text-white transition-all duration-150">
+                                    ¡Reservar mi acceso ahora!
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--]-->
+                </div><!---->
+            </div>
         </div>
-        
-        <div class="bg-white rounded-[14px] border border-gray-200 p-8 lg:p-10 shadow-lg">
-          <h3 class="text-[#2f327d] text-xl font-semibold mb-6">
-            Ingeniera, fundadora de Ourekam, coach Agil y en Neurociencia Cognitiva y Comportamental.
-          </h3>
-          
-          <div class="space-y-4 text-gray-700">
-            <p>Soy Janneth, una profesional apasionada por la transformación humana. Ingeniera de formación, con un máster en management y más de 20 años liderando equipos en entornos ágiles y de alta exigencia, siempre entendí que los resultados sostenibles comienzan por algo más profundo: el bienestar de las personas.</p>
-            
-            <p>A lo largo de mi carrera, descubrí que el verdadero motor del rendimiento no está solo en los procesos, sino en el cerebro, las emociones y la energía interna de quienes los llevan a cabo. Esta convicción me llevó a especializarme en neurociencia cognitiva, comportamiento humano y mindfulness, integrando ciencia y conciencia para generar cambios reales.</p>
-            
-            <p>Hoy, canalizo esa experiencia en lo que más me mueve: acompañar a personas como tú a descubrir el poder escondido en el estrés y transformarlo en crecimiento, equilibrio y autenticidad. Este taller no es solo una formación, es una experiencia diseñada para que tomes el control de tu biología, despiertes tu potencial y construyas una versión más plena de ti misma(o).</p>
-          </div>
 
-          <h4 class="text-[#2f327d] text-xl font-bold mt-6 text-center">
-            ¿Te sumas a este viaje conmigo?
-          </h4>
+
+
+
+        <div class="container max-w-screen-lg mx-auto py-12 px-4">
+            <div
+                class="divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 dark:bg-gray-900 bg-white shadow-xl rounded-xl overflow-hidden">
+                <!---->
+                <div class="px-4 py-5 sm:p-6"><!--[-->
+                    <div class="p-6 md:p-8">
+                        <h1 class="text-2xl md:text-3xl font-bold text-[#2f327d] mb-6"><span class="text-[#2f327d]">¿A quién
+                                va dirigido este evento?</span></h1>
+                        <div class="space-y-4 text-gray-700">
+                            <div>
+                                <h2 class="font-bold">Profesionales con alto nivel de responsabilidad, expuestos a altos
+                                    niveles de estrés:</h2>
+                                <p>
+                                    Que quieran aplicar herramientas basadas en la neurociencia para incrementar su
+                                    resiliencia y manejar mejor el estrés y la presión laboral.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="font-bold">
+                                    Profesionales que se identifiquen con una o más de estas situaciones y busquen una
+                                    solución eficaz:
+                                </h2>
+                                <ul class="list-disc pl-5 my-4 space-y-2">
+                                    <li class="list-item">Te cuesta concentrarte o tomar decisiones con claridad.</li>
+                                    <li class="list-item"> Tu energía física y mental ya no es la misma.</li>
+                                    <li class="list-item">Trabajas mucho pero sientes que avanzas poco.</li>
+                                    <li class="list-item">Haz perdido la motivación o la conexión con tu trabajo.</li>
+                                    <li class="list-item">Sabes que necesitas un cambio, pero no sabes por dónde empezar.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold">
+                                    Profesionales quienes hayan vivido un estrés crónico o un burnout:
+                                </h2>
+                                <p>
+                                    Que deseen prevenir recaídas mediante herramientas científicas.
+                                </p>
+                            </div>
+                            <div class="flex justify-center md:justify-start">
+                                <a href="#registro" class="bg-sky-500 hover:bg-sky-700 mt-6 px-4 py-3 rounded-lg font-bold text-white transition-all duration-150">
+                                    ¡Reservar mi acceso ahora!
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--]-->
+                </div><!---->
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- REGISTRO -->
-  <section id="registro" class="bg-gray-50 py-14 lg:py-20">
+
+        <div class="bg-gradient-to-br from-sky-50 to-white py-12">
+            <div class="container max-w-screen-lg mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-[#2f327d] mb-10">¿Quién te acompañará en este
+                    viaje? Conoce a <span class="text-[#a08c4a]">Janneth Rodríguez</span></h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/3 m-8">
+                        <div class="relative w-full aspect-square rounded-full overflow-hidden bg-white border-4 border-white shadow-lg">
+                            <img src="/public/janneth-coach.jpg" alt="Janneth Rodríguez" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl md:text-2xl font-bold text-[#2f327d] mb-2">
+                            Ingeniera, coach en Neurociencia Cognitiva y Comportamental y Ágil, fundadora de Ourekam
+                        </h3>
+                        <p class="my-4 text-justify">
+                            Soy Janneth, una profesional apasionada por la transformación humana. Ingeniera de
+                            formación, con un máster en management y más de 20 años liderando equipos en entornos ágiles
+                            y de alta exigencia, siempre entendí que los resultados sostenibles comienzan por algo más
+                            profundo: el bienestar de las personas.
+                        </p>
+                        <p class="my-4 text-justify">
+                            A lo largo de mi carrera, descubrí que el verdadero motor del rendimiento no está solo en
+                            los procesos, sino en el cerebro, las emociones y la energía interna de quienes los llevan a
+                            cabo. Esta convicción me llevó a especializarme en neurociencia cognitiva, comportamiento
+                            humano y mindfulness, integrando ciencia y conciencia para generar cambios reales.
+                        </p>
+                        <p class="my-4 text-justify">
+                            Hoy aplico esa experiencia en lo que más me apasiona: acompañar a profesionales como tú a
+                            transformar el estrés en un motor de rendimiento y bienestar.
+                        </p>
+                        <p class="text-lg font-bold text-[#2f327d]">¿Te sumas a este viaje conmigo?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bg-gradient-to-br from-sky-50 to-white py-12">
+            <div class="container max-w-screen-lg mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-[#2f327d] mb-10">
+                    Workshop Exclusivo, vía Zoom
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-2/3">
+                        <div
+                            class="bg-gradient-to-br from-sky-50 to-white p-4 rounded-lg border-l-4 border-azulok mt-6">
+                            <ul class="list-none space-y-3">
+                                <li class="flex items-start"><span
+                                        class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                        aria-hidden="true" ></span><strong class="mr-2">Fechas:</strong>
+                                    23 y 24 de agosto de 2025</li>
+                                <li class="flex items-start"><span
+                                        class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                        aria-hidden="true" ></span><strong class="mr-2">Hora:</strong> 19:00
+                                    (Francia)</li>
+                                <li class="flex items-start"><span
+                                        class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                        aria-hidden="true" ></span><strong class="mr-2">Duración:</strong>
+                                    2 sesiones de 90 minutos</li>
+                                <li class="flex items-start"><span
+                                        class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                        aria-hidden="true" ></span><strong class="mr-2">Formato:</strong>
+                                    Workshop en vivo vía Zoom</li>
+                                <li class="flex items-start"><span
+                                        class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                        aria-hidden="true" ></span><strong class="mr-2">Acceso:</strong>
+                                    Recibirás un enlace de Zoom antes del evento</li>
+                                <li class="flex items-start"><span
+                                        class="iconify i-heroicons:check-circle text-azulok mt-1 mr-2 flex-shrink-0"
+                                        aria-hidden="true" ></span>
+                                    <p><strong class="mr-2">Precio:</strong> En esta oportunidad, Janneth ha decidido
+                                        ofrecerte esta conferencia, como un regalo de alto valor para tu bienestar.</p>
+                                </li>
+                                <p class="ml-6 text-[#2f327d] font-semibold text-lg">Precio habitual: 150 Euros Hoy, acceso
+                                    100% gratuito</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="#registro" class="bg-sky-500 hover:bg-sky-700 mt-6 px-4 py-3 rounded-lg font-bold text-white transition-all duration-150">
+                            ¡Reservar mi acceso ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="testimonials" class="bg-gray-50">
+          <div class="container max-w-screen-lg mx-auto py-12 px-4">
+              <h2 class="text-2xl md:text-3xl font-bold text-center text-[#2f327d] mb-10">¡Lo que opinan quienes ya
+                  participaron en nuestros Talleres - Formación!</h2>
+              <div class="relative rounded-lg overflow-hidden mx-8 p-4" dir="ltr" >
+                  <div id="carousel-testimonials" class="relative w-full flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
+                      <div class="carousel-testimonials flex-none snap-center basis-full" >
+                          <div
+                              class="divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 dark:bg-gray-900 bg-white shadow-md rounded-xl overflow-hidden m-4">
+                              
+                              <div class="px-4 py-5 sm:p-6">
+                                  <div class="text-center mx-auto p-4">
+                                      <p class="md:text-lg text-gray-700 italic mb-4">Este taller ha sido una experiencia
+                                          transformadora para mí. He descubierto herramientas y estrategias que me han
+                                          ayudado a mejorar mi bienestar y a alcanzar mis objetivos.</p>
+                                      <p class="text-sm md:text-base font-bold text-[#2f327d]">María P.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-testimonials flex flex-none snap-center basis-full" ><!--[-->
+                          <div
+                              class="divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 dark:bg-gray-900 bg-white shadow-md rounded-xl overflow-hidden m-4">
+                              
+                              <div class="px-4 py-5 sm:p-6">
+                                  <div class="text-center mx-auto p-4">
+                                      <p class="md:text-lg text-gray-700 italic mb-4">Me encantó el enfoque práctico y
+                                          científico del taller. Me sentí muy cómoda y segura durante todo el proceso.</p>
+                                      <p class="text-sm md:text-base font-bold text-[#2f327d]">Juan C.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-testimonials flex flex-none snap-center basis-full" ><!--[-->
+                          <div
+                              class="divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 dark:bg-gray-900 bg-white shadow-md rounded-xl overflow-hidden m-4">
+                              <!---->
+                              <div class="px-4 py-5 sm:p-6"><!--[-->
+                                  <div class="text-center mx-auto p-4">
+                                      <p class="md:text-lg text-gray-700 italic mb-4">El taller ha sido una experiencia
+                                          muy enriquecedora. Me ha permitido entender mejor mi cerebro y mi cuerpo y a
+                                          desarrollar estrategias para mejorar mi bienestar.</p>
+                                      <p class="text-sm md:text-base font-bold text-[#2f327d]">Sofía G.</p>
+                                  </div><!--]-->
+                              </div><!---->
+                          </div><!--]-->
+                      </div>
+                      <div class="carousel-testimonials flex flex-none snap-center basis-full" ><!--[-->
+                          <div
+                              class="divide-y divide-gray-200 dark:divide-gray-800 ring-1 ring-gray-200 dark:ring-gray-800 dark:bg-gray-900 bg-white shadow-md rounded-xl overflow-hidden m-4">
+                              <!---->
+                              <div class="px-4 py-5 sm:p-6"><!--[-->
+                                  <div class="text-center mx-auto p-4">
+                                      <p class="md:text-lg text-gray-700 italic mb-4">Me gustó mucho la forma en que se
+                                          presentaron las herramientas y estrategias, era fácil de entender y aplicar.</p>
+                                      <p class="text-sm md:text-base font-bold text-[#2f327d]">Pedro R.</p>
+                                  </div><!--]-->
+                              </div><!---->
+                          </div><!--]-->
+                      </div><!--]-->
+                  </div><!----><!---->
+              </div>
+          </div>
+        </section>
+        <!-- REGISTRO -->
+  <section id="registro" class="bg-white py-14 lg:py-20">
     <div class="container max-w-[1120px] mx-auto px-6">
       <h2 class="text-center text-[#2f327d] font-extrabold text-[clamp(1.4rem,1.2vw+1rem,2rem)] mb-6">
         Inscríbete a nuestro Taller - Formación en vivo
       </h2>
 
-      
       <form method="POST" id="form"
             class="max-w-[900px] mx-auto bg-white rounded-[14px] border border-gray-200 p-6 shadow-lg overflow-hidden">
         <input type="hidden" name="access_key" value="1b4a7504-1b16-4cfa-8734-24d1726ce492" />
@@ -296,7 +550,6 @@
               <option value="" selected disabled>Selecciona</option>
               <option value="es">Español</option>
               <option value="fr">Francés</option>
-              <option value="en">Inglés</option>
             </select>
           </div>
 
@@ -352,13 +605,51 @@
       </form>
     </div>
   </section>
-
-  <footer class="bg-[#0b1223] text-gray-200 py-5 text-center">
-    <div class="container max-w-[1120px] mx-auto px-6">
-      <p>© 2025 Ourekam. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
+        <footer class="bg-[#2f327d]" id="contact">
+            <div class="container mx-auto max-w-screen-xl px-4 lg:px-8 pt-8 pb-2">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8">
+                    <div class="sm:col-span-4">
+                        <div class="flex items-center mb-4">
+                            <div class="relative"><img src="/public/NewLogo.png" class="w-12" alt="Ourekam Logo">
+                            </div><span
+                                class="border-l border-gray-500 text-sm pl-3 ml-3 py-1 font-semibold text-white">
+                                Neurosciences based<br>Coaching with <span
+                                    class="text-pink-500 font-bold">Love</span></span>
+                        </div>
+                        <p class="text-gray-300 font-semibold text-sm mt-6">Síguenos en las redes sociales:</p>
+                        <div class="flex mt-4"><button type="button"
+                                class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-base gap-x-2.5 p-2.5 disabled:text-primary-500 aria-disabled:text-primary-500 dark:text-primary-400 dark:hover:text-primary-500 dark:disabled:text-primary-400 dark:aria-disabled:text-primary-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center text-white hover:text-white pl-0 py-2 pr-2"><!--[--><!--[--><span
+                                    class="iconify i-hugeicons:instagram flex-shrink-0 h-6 w-6" aria-hidden="true"
+                                    ></span><!--]--><!--[--><!----><!--]--><!--[--><!----><!--]--><!--]--></button><button
+                                type="button"
+                                class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-base gap-x-2.5 p-2.5 disabled:text-primary-500 aria-disabled:text-primary-500 dark:text-primary-400 dark:hover:text-primary-500 dark:disabled:text-primary-400 dark:aria-disabled:text-primary-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center text-white hover:text-white py-2 pr-2"><!--[--><!--[--><span
+                                    class="iconify i-hugeicons:linkedin-01 flex-shrink-0 h-6 w-6" aria-hidden="true"
+                                    ></span><!--]--><!--[--><!----><!--]--><!--[--><!----><!--]--><!--]--></button><button
+                                type="button"
+                                class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-base gap-x-2.5 p-2.5 disabled:text-primary-500 aria-disabled:text-primary-500 dark:text-primary-400 dark:hover:text-primary-500 dark:disabled:text-primary-400 dark:aria-disabled:text-primary-400 underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center text-white hover:text-white py-2 pr-2"><!--[--><!--[--><span
+                                    class="iconify i-hugeicons:youtube flex-shrink-0 h-6 w-6" aria-hidden="true"
+                                    ></span><!--]--><!--[--><!----><!--]--><!--[--><!----><!--]--><!--]--></button>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="font-semibold text-white text-sm mb-4">Para Empresas</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-gray-300 hover:text-white">Coming soon</a></li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="font-semibold text-white text-sm mb-4">Para Personas</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-sm text-gray-300 hover:text-white">Coming soon</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm py-2">
+                    <div class="mb-3 md:mb-0 mt-6">
+                        <p>© 2025 Ourekam. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
   <script src="script.js"></script>
 </body>
-</html>

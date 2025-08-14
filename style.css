@@ -1,6 +1,8 @@
 :root {
   --pink: #f15bb5;
   --blue-light: #00bbf9;
+  --darken: #2f327d;
+  --goldok: #a08c4a;
 }
 
 /* Custom backgrounds and effects */
@@ -12,4 +14,19 @@
 /* Custom gradients */
 .about-guide {
   background: linear-gradient(135deg, rgba(241, 91, 181, 0.08), rgba(0, 187, 249, 0.08));
+}
+
+#carousel-testimonials {
+  position: relative;
+  height: 300px; /* Adjust based on your content height */
+  overflow: hidden;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
