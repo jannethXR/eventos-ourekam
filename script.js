@@ -147,46 +147,75 @@ function initTestimonialsCarousel() {
   
   // Set initial styles for the container
   carousel.style.position = 'relative';
-  carousel.style.height = `${slides[0].offsetHeight}px`;
   
-  // Set up initial slide positions
-  slides.forEach((slide, index) => {
-    slide.style.position = 'absolute';
-    slide.style.top = '0';
-    slide.style.left = '0';
-    slide.style.width = '100%';
-    slide.style.opacity = index === 0 ? '1' : '0';
-    slide.style.transform = index === 0 ? 'translateX(0)' : 'translateX(100%)';
-    slide.style.transition = 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out';
-  });
-
-  function showSlide(index) {
-    // Hide current slide
-    slides[currentSlide].style.opacity = '0';
-    slides[currentSlide].style.transform = 'translateX(-100%)';
+  // Reset positions and ensure all slides are visible initially
+  function resetSlidePositions() {
+    carousel.style.height = `${slides[0].offsetHeight}px`;
     
-    // Show new slide
-    slides[index].style.opacity = '1';
-    slides[index].style.transform = 'translateX(0)';
-    
-    // Reset other slides
-    slides.forEach((slide, i) => {
-      if (i !== currentSlide && i !== index) {
-        slide.style.opacity = '0';
-        slide.style.transform = 'translateX(100%)';
-      }
+    slides.forEach((slide, index) => {
+      slide.style.position = 'absolute';
+      slide.style.top = '0';
+      slide.style.left = '0';
+      slide.style.width = '100%';
+      slide.style.visibility = 'visible'; // Ensure slides are always visible
+      slide.style.opacity = index === currentSlide ? '1' : '0';
+      slide.style.transform = index === currentSlide ? 'translateX(0)' : 
+                            index < currentSlide ? 'translateX(-100%)' : 'translateX(100%)';
+      slide.style.transition = 'transform 0.6s ease-in-out, opacity 0.6s ease-in-out';
     });
-    
-    currentSlide = index;
   }
 
+  function showSlide(index) {
+    // Prevent invalid indices
+    if (index < 0 || index >= slideCount) return;
+    
+    const previousSlide = currentSlide;
+    currentSlide = index;
+
+    slides.forEach((slide, i) => {
+      if (i === currentSlide) {
+        // Incoming slide
+        slide.style.transform = 'translateX(0)';
+        slide.style.opacity = '1';
+      } else if (i === previousSlide) {
+        // Outgoing slide
+        slide.style.transform = 'translateX(-100%)';
+        slide.style.opacity = '0';
+      } else {
+        // Reset other slides
+        slide.style.transform = 'translateX(100%)';
+        slide.style.opacity = '0';
+      }
+    });
+  }
+
+  // Initialize the carousel
+  resetSlidePositions();
+
+  // Auto-advance with error handling
   let intervalId = setInterval(() => {
-    const nextSlide = (currentSlide + 1) % slideCount;
-    showSlide(nextSlide);
+    try {
+      const nextSlide = (currentSlide + 1) % slideCount;
+      showSlide(nextSlide);
+    } catch (error) {
+      console.error('Carousel error:', error);
+      // Reset carousel if something goes wrong
+      resetSlidePositions();
+    }
   }, 10000);
 
-  // Clean up on page change/unmount
-  return () => clearInterval(intervalId);
+  // Handle window resize
+  const handleResize = () => {
+    resetSlidePositions();
+  };
+
+  window.addEventListener('resize', handleResize);
+
+  // Cleanup function
+  return () => {
+    clearInterval(intervalId);
+    window.removeEventListener('resize', handleResize);
+  };
 }
 
 // Initialize carousels when DOM is loaded
